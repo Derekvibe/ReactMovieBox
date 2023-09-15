@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import Main from './Main';
+import AddFavourites from "./AddFavourites";
+import MovieCard from './MovieCard';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
-function App() {
+
+function Home() {
   const API_URL =
     'https://api.themoviedb.org/3/movie/popular?api_key=767a7cc8de7d102579d3d1cf9acd65e8';
   const API_SEARCH =
