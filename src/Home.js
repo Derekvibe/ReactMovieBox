@@ -68,6 +68,7 @@ function Home() {
           />
         </div>
 
+
         <div className="mt-4">
           <Main />
         </div>
@@ -81,6 +82,22 @@ function Home() {
             />
           ))}
         </div>
+
+      </div>
+
+      <div className="mt-4">
+        <Main />
+      </div>
+
+      <div className="movies grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-3">
+        {movies.map((movie) => (
+          <MovieCard
+            key={movie.id}
+            {...movie}
+            favouriteComponent={AddFavourites}
+          />
+        ))}
+
       </div>
     </div>
   );
