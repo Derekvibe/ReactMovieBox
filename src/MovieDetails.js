@@ -3,6 +3,7 @@ import AddFavourites from './AddFavourites';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faHome, faTv, faVideo } from '@fortawesome/free-solid-svg-icons';
 
+
 const MovieDetails = () => {
   return (
     <div>
