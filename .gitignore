@@ -1,0 +1,30 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+API_URL ="https://api.themoviedb/3/movie/id?api_key=767a7cc8de7d102579d3d1cf9acd65e8"
+
+API_IMG = "https://image.tmdb.org/t/p/w500/"
+
+API_SEARCH ="https://api.themoviedb.org/3/search/movie?api_key=767a7cc8de7d102579d3d1cf9acd65e8&query"
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
