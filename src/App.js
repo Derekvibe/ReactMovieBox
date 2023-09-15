@@ -9,9 +9,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/home/*" element={<Home />}/>
-        <Route path="/movie-card" element={<MovieCard />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/main" element={<Main />} />
+        <Route exact path="/movie-card" element={<MovieCard />} />
+        {/* Add more routes as needed */}
       </Routes>
     </BrowserRouter>
   );
