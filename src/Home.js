@@ -61,14 +61,15 @@ function Home() {
         </div>
 
         <div className="text-white items-center mr-2 hidden md:flex">
-  <a href="/" className="mr-2">
-    Sign in
-  </a>
-  <FontAwesomeIcon
-    icon={faBars}
-    className="p-2 bg-orange-600 rounded-full"
-  />
-</div>
+        <a href="/" className="mr-2">
+          Sign in
+        </a>
+        <FontAwesomeIcon
+          icon={faBars}
+          className="p-2 bg-orange-600 rounded-full"
+        />
+      </div>
+
 
       </div>
 

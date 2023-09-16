@@ -34,7 +34,7 @@ const MovieDetails = () => {
 
         <div className='flex items-center gap-2'>
           <img src="/images/moviebox_logo.png" alt="logo" className='pl-4'/>
-          <h1 className="text-white text-2xl">MovieBox</h1>
+          <h1 className="text-white text-1xl">MovieBox</h1>
         </div>
         
 
@@ -65,7 +65,7 @@ const MovieDetails = () => {
         
         {details && (
           <div>
-            <img className='rounded-md'
+            <img className='rounded-md w-full'
               src={`https://image.tmdb.org/t/p/original${details.backdrop_path}`}
               alt={details.original_title}
             />
