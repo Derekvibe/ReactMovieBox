@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Main from "./Main";
 import MovieCard from "./MovieCard";
+import { Link} from "react-router-dom"
 import AddFavourite from "./AddFavourite";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -35,10 +36,11 @@ function Home() {
     <div className="App bg-custom-blue p-5">
       <div className="flex search_nav items-center justify-between">
         <div className="flex mr-12 gap-4 items-center">
-          <a href="{App/}" className="flex mr-12 gap-2 items-center">
+        
+        <Link to="/" className="flex mr-12 gap-2 items-center">
             <img src="/images/moviebox_logo.png" alt="logo" />
             <h1 className="text-white text-3xl">MovieBox</h1>
-          </a>
+        </Link>        
         </div>
 
         <div className="bg-white py-1 px-2 rounded-md">

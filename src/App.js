@@ -10,9 +10,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/main" element={<Main />} />
-        <Route exact path="/movie-card" element={<MovieCard />} />
-        <Route path="/movies/:id" component={MovieDetails} />
+        <Route path="/main" element={<Main />} />
+        <Route path="/movie-card" element={<MovieCard />} />
+        <Route path="/movies/:id" element={<MovieDetails />} />
       </Routes>
     </BrowserRouter>
   );
