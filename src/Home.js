@@ -3,7 +3,7 @@ import Main from "./Main";
 import AddFavourites from "./AddFavourites";
 import MovieCard from "./MovieCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons"; // Corrected icon name
+import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   const API_URL =
@@ -53,13 +53,13 @@ function Home() {
               type="submit"
               className="ml-12 p-1 rounded-md hover:bg-black hover:text-white"
             >
-              <FontAwesomeIcon icon={faSearch} /> {/* Corrected icon name */}
+              <FontAwesomeIcon icon={faSearch} />
             </button>
           </form>
         </div>
 
         <div className="text-white items-center mr-2">
-          <a href="/" className="mr-2 ">
+          <a href="/" className="mr-2">
             Sign in
           </a>
           <FontAwesomeIcon
@@ -67,38 +67,22 @@ function Home() {
             className="p-2 bg-orange-600 rounded-full"
           />
         </div>
-
-
-        <div className="mt-4">
-          <Main />
-        </div>
-
-        <div className="movies grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-3">
-          {movies.map((movie) => (
-            <MovieCard
-              key={movie.id}
-              {...movie}
-              favouriteComponent={AddFavourites}
-            />
-          ))}
-        </div>
-
       </div>
 
       <div className="mt-4">
         <Main />
       </div>
 
-      <div className="movies grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-3">
-        {movies.map((movie) => (
-          <MovieCard
-            key={movie.id}
-            {...movie}
-            favouriteComponent={AddFavourites}
-          />
-        ))}
-
-      </div>
+      {movies.length > 0 && (
+        <div className="movies grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-3">
+          {movies.map((movie) => (
+            <MovieCard
+              key={movie.id}
+              {...movie}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

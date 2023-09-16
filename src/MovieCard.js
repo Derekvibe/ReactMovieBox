@@ -1,16 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AddFavourites from "./AddFavourites";
-import { useFavorites } from "./FavoritesContext";
 
 const MovieCard = (props) => {
-  const { toggleFavorite } = useFavorites(); // Use the hook to get the toggleFavorite function
-
+ 
   const API_IMG = "https://image.tmdb.org/t/p/w500/";
-
-  const handleFavoriteClick = () => {
-    toggleFavorite(props); // Toggle the favorite status of the movie
-  };
 
   return (
     <div
@@ -47,9 +40,6 @@ const MovieCard = (props) => {
           </div>
         </div>
 
-        <div>
-          <AddFavourites movie={props} />
-        </div>
       </Link>
     </div>
   );
