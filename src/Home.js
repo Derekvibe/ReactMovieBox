@@ -37,9 +37,9 @@ function Home() {
       <div className="flex search_nav items-center justify-between">
         <div className="flex mr-12 gap-4 items-center">
         
-        <Link to="/" className="flex mr-12 gap-2 items-center">
+        <Link to="/" className="flex gap-1 items-center">
             <img src="/images/moviebox_logo.png" alt="logo" />
-            <h1 className="text-white text-3xl">MovieBox</h1>
+            <h1 className="text-white text-2xl">MovieBox</h1>
         </Link>        
         </div>
 
@@ -48,27 +48,28 @@ function Home() {
             <input
               onChange={(e) => setTerm(e.target.value)}
               value={term}
-              placeholder="What do you want to watch?"
+              placeholder="Search Movies"
               className="border border-transparent focus:outline-none focus:ring-0 text-xm"
             />
             <button
               type="submit"
-              className="ml-12 p-1 rounded-md hover:bg-black hover:text-white"
+              className="ml-10 p-1 rounded-md hover:bg-black hover:text-white"
             >
               <FontAwesomeIcon icon={faSearch} />
             </button>
           </form>
         </div>
 
-        <div className="text-white items-center mr-2">
-          <a href="/" className="mr-2">
-            Sign in
-          </a>
-          <FontAwesomeIcon
-            icon={faBars}
-            className="p-2 bg-orange-600 rounded-full"
-          />
-        </div>
+        <div className="text-white items-center mr-2 hidden md:flex">
+  <a href="/" className="mr-2">
+    Sign in
+  </a>
+  <FontAwesomeIcon
+    icon={faBars}
+    className="p-2 bg-orange-600 rounded-full"
+  />
+</div>
+
       </div>
 
       <div className="mt-4">

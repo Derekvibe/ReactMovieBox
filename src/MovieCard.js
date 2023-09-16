@@ -42,6 +42,8 @@ const MovieCard = (props) => {
 
       </Link>
     </div>
+
+    
   );
 };
 
