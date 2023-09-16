@@ -12,7 +12,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/main" element={<Main />} />
         <Route exact path="/movie-card" element={<MovieCard />} />
-        <Route path="/movies/:id" element={<MovieDetails />} />
+        <Route path="/movies/:id" component={MovieDetails} />
       </Routes>
     </BrowserRouter>
   );

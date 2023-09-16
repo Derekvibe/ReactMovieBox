@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Main from "./Main";
-import AddFavourites from "./AddFavourites";
 import MovieCard from "./MovieCard";
+import AddFavourite from "./AddFavourite";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
 
