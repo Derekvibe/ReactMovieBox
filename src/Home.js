@@ -38,27 +38,28 @@ function Home() {
         <div className="flex mr-12 gap-4 items-center">
         
         <Link to="/" className="flex gap-1 items-center">
-            <img src="/images/moviebox_logo.png" alt="logo" />
-            <h1 className="text-white text-2xl">MovieBox</h1>
+        <img src="/images/moviebox_logo.png" alt="logo"/>
+            <h1 className="text-white text-2xl hidden sm:block">MovieBox</h1>
         </Link>        
         </div>
 
         <div className="bg-white py-1 px-2 rounded-md">
-          <form onSubmit={handleSearch}>
-            <input
-              onChange={(e) => setTerm(e.target.value)}
-              value={term}
-              placeholder="Search Movies"
-              className="border border-transparent focus:outline-none focus:ring-0 text-xm"
-            />
-            <button
-              type="submit"
-              className="ml-10 p-1 rounded-md hover:bg-black hover:text-white"
-            >
-              <FontAwesomeIcon icon={faSearch} />
-            </button>
-          </form>
-        </div>
+  <form onSubmit={handleSearch} className="flex">
+    <input
+      onChange={(e) => setTerm(e.target.value)}
+      value={term}
+      placeholder="Search Movies"
+      className="border border-transparent focus:outline-none focus:ring-0 text-xm md:text-sm lg:text-base flex-grow"
+    />
+    <button
+      type="submit"
+      className="p-1 rounded-md hover:bg-black hover:text-white ml-2"
+    >
+      <FontAwesomeIcon icon={faSearch} />
+    </button>
+  </form>
+</div>
+
 
         <div className="text-white items-center mr-2 hidden md:flex">
         <a href="/" className="mr-2">
